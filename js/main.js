@@ -1,3 +1,41 @@
+class MyHeader extends HTMLElement {
+connectedCallback () {
+    this.innerHTML = `
+    <header><link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    BEACHCOMBING TURTLE CLIFFS
+ 
+
+ <nav>
+    <div class="topnav">
+      <a class="navlinks" href="#home">Home</a>
+      <a href="#beachcombing">Beachcombing</a>   
+      <a href="#marinelife">Marine Life</a>    
+      <a href="#contact">Contact</a>
+      
+    </div>
+
+  </nav> 
+</header>`
+}
+}
+
+customElements.define('my-header', MyHeader);
+
+class MyFooter extends HTMLElement {
+    connectedCallback () {
+        this.innerHTML = `
+        <footer>
+        <p>© SHANNSPANPLAYSJS 2022</p>
+        <p>non commercial - only for research and educational purpose
+        all picture copyrights remain with their authors.</p>
+      </footer>`
+    }
+    }
+    
+    customElements.define('my-footer', MyFooter);
+    
+
+
 //Global Variables
 
 const listItems = 12;
