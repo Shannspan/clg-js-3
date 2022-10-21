@@ -43,19 +43,7 @@ aside {
     }
 /*Does this list need to be on it's own page? Perhaps the article text would be better as an 'aside' space*/
 
-footer {
-    background-color: lightgray;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    font-size: 0.5em;
-    color: #0e0e62;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    margin: 0;
 
-}
 
 h1 {
     color: #BF9CA4;
@@ -86,9 +74,19 @@ h1 {
     max-width: 20em;
 }
 
-#my-footer {
-    
-}
+#my-footer {    
+    color: #0e0e62;
+    background-color: lightgray;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 0.5em;    
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    }
+
 
 
 
