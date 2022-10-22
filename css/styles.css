@@ -1,15 +1,18 @@
+html {
+    background: url(../images/Turtle-cliff-beach.jpg) no-repeat top left fixed;
+    background-size: cover;  
+    Background-image: linear-gradient(to right, #ff000000, #D5D3D9), url(../images/Turtle-cliff-beach.jpg);
+
+}
+/*!!Fix found for background url not sitting right (gap at base on expansion) and gradient not matching image. place background in html element. See above*/
+
 body {
-    font-family: 'Schoolbell', cursive;
-    background: linear-gradient(to right, transparent, #D5D3D9), url("/images/Turtle-cliff-beach.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    opacity: 30;
+    font-family: 'Schoolbell', cursive;   
     font-size: 2em;
     color:#0e0e62;
+    display: flex;
+    flex-flow: column wrap;
 }
-/*!!Fix background url not sitting right (gap at base on expansion)*/
-
-
 
 a:link {
     color: #0e0e62;
@@ -34,16 +37,11 @@ article {
     padding: 1em;
 }
 
-
 aside {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
     }
-/*Does this list need to be on it's own page? Perhaps the article text would be better as an 'aside' space*/
-
-
 
 h1 {
     color: #BF9CA4;
