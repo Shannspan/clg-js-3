@@ -18,7 +18,6 @@ connectedCallback () {
 </header>`
 }
 }
-
 customElements.define('my-header', MyHeader);
 
 class MyFooter extends HTMLElement {
@@ -30,8 +29,7 @@ class MyFooter extends HTMLElement {
         all picture copyrights remain with their authors.</p>
       </footer>`
     }
-    }
-    
+    }    
     customElements.define('my-footer', MyFooter);
     
 
