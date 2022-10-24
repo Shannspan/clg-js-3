@@ -1,24 +1,32 @@
-class MyHeader extends HTMLElement {
+class Header extends HTMLElement {
+  constructor(){
+    super();
+  }
 connectedCallback () {
     this.innerHTML = `
-    <header><link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <header>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     BEACHCOMBING TURTLE CLIFFS
- 
-
- <nav>
+    <nav>
     <div class="topnav">
-      <a class="navlinks" href="#home">Home</a>
-      <a href="#beachcombing">Beachcombing</a>   
-      <a href="#marinelife">Marine Life</a>    
-      <a href="#contact">Contact</a>
-      
+    <a class="navlinks" href="#home">Home</a>
+    <a href="#beachcombing">Beachcombing</a>   
+    <a href="#marinelife">Marine Life</a>    
+    <a href="#contact">Contact</a>
     </div>
+    </nav> 
+    </header>
+    `;
+}
+}
+    customElements.define('header-component', Header);
 
-  </nav> 
-</header>`
-}
-}
-customElements.define('my-header', MyHeader);
+  //Error message for header & footer Uncaught ReferenceError:  CustomElements is not defined - fixed! This was a simple typo - had a capital at the start of customElements. 
+
+  //new error just on header: 
+  //the name "my-header" has already been used with this registry.
+  //fix attempt - changed name to the-header. Same error occurs for new name.
+  //fix attempt 2 - found missing semicolon and tried a new variation of code and new name, same error.
 
 class MyFooter extends HTMLElement {
     connectedCallback () {
@@ -31,6 +39,8 @@ class MyFooter extends HTMLElement {
     }
     }    
     customElements.define('my-footer', MyFooter);
+
+  
     
 
 
