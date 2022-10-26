@@ -12,7 +12,7 @@
    
   
 
-  <header-component></header-component>
+  <header-component id = "header-component"></header-component>
 
     <p><link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet"></p>
 
@@ -21,17 +21,28 @@
     <div id = main>
 
     <article>
-      <p>Please do your own research while beachcombing on Western Australia's Coral Coast as shell collection from beaches is not allowed in marine park areas.</p> 
-      <p> Turtle cliffs is outside of the nearby Maud sanctuary zone.</p>
-
+      <h2>Please do your own research while beachcombing on Western Australia's Coral Coast as shell collection from beaches is not allowed in marine park areas.</h2> 
+      <h2> Turtle cliffs is outside of the nearby Maud sanctuary zone.</h2>
     </article>
+    <p></p>
+    <select id="shell-choice">
+        <option value="">--Make a choice--</option>
+        <option value="cowry">Cowry</option>
+        <option value="trochus">Trochus</option>
+        <option value="clam">Clam</option>
+        <option value="turban">Turban</option>
+    </select>
 
-
-    <section>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium hic dicta, blanditiis ipsum iusto architecto iste? Consectetur, ex sunt aut neque deserunt, voluptate molestiae nihil ipsam hic qui minima animi.   
-      </section>
-
+    <label for="shell-choice">Select your favourite shell:</label> 
+    
+      <p id="shell-btn">
+      Press Me!
+      </p>
     </div>
+
+     
+
+      
 
 
 
@@ -39,5 +50,6 @@
     
 	<my-footer id="my-footer"></my-footer>
 	<script src="js/main.js"></script>
+
 	</body>
 </html>
