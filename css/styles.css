@@ -127,7 +127,6 @@ p {
     #main {
         display: flex;
         flex-flow: wrap-reverse row;
-        align-items:;
         max-width: 100%;
         padding: 2em;
     }
